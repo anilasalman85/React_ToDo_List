@@ -1,0 +1,171 @@
+/* Background and Container */
+body {
+  background: linear-gradient(135deg, #2d3436, #1a202c);
+  color: #ecf0f1;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ecf0f1;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background: rgba(44, 62, 80, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 50px;
+}
+
+.category-container, .filter-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.category-button, .filter-button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.category-button:hover, .filter-button:hover {
+  background-color: #16a085;
+  transform: scale(1.1);
+}
+
+.category-button.all { background-color: #34495e; }
+.category-button.personal { background-color: #3498db; }
+.category-button.work { background-color: #e67e22; }
+.category-button.urgent { background-color: #e74c3c; }
+.category-button.hobby { background-color: #8e44ad; }
+
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #2c3e50;
+  border-radius: 15px;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-container input, .form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #16a085;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #1abc9c;
+}
+
+
+.task-list-container {
+  margin-top: 30px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #34495e;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.task-details {
+  max-width: 70%;
+}
+
+.task-details h4 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.task-details p {
+  margin: 5px 0;
+}
+
+.task-actions button {
+  margin-left: 10px;
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-actions .btn-primary {
+  background-color: #2980b9;
+  color: white;
+}
+
+.task-actions .btn-primary:hover {
+  background-color: #3498db;
+}
+
+.task-actions .btn-danger {
+  background-color: #c0392b;
+  color: white;
+}
+
+.task-actions .btn-danger:hover {
+  background-color: #e74c3c;
+}
+
+
+.task-category {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.task-category.personal { background-color: #3498db; }
+.task-category.work { background-color: #e67e22; }
+.task-category.urgent { background-color: #e74c3c; }
+.task-category.hobby { background-color: #8e44ad; }
+
+
+.text-center.text-danger {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #e74c3c;
+}
